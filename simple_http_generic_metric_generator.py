@@ -121,7 +121,7 @@ if __name__ == "__main__":
    print len(sys.argv)
    if len(sys.argv)==2:
      try:
-        os.system("ps -ef | grep simple_http_thread  | grep -v grep |awk  '{print $2}' | xargs kill -9")
+        os.system("ps -ef | grep simple_http_generic_metric_generator  | grep -v grep |awk  '{print $2}' | xargs kill -9")
      except Exception as e:
         print e
        
